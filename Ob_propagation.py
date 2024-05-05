@@ -8,10 +8,9 @@ import torch
 from torch import Tensor
 import torch.nn.functional as F
 from torch.nn import Linear
-from torch_sparse import SparseTensor
 from torch_geometric.nn.conv import MessagePassing
 from torch_geometric.utils import softmax
-from torch_scatter import gather_csr, scatter, segment_csr
+# from torch_scatter import gather_csr, scatter, segment_csr
 
 
 class Observation_progation(MessagePassing):
@@ -103,7 +102,6 @@ class Observation_progation(MessagePassing):
         """
         """Here, the edge_attr is not edge weights, but edge features!
         If we want to the calculation contains edge weights, change the calculation of alpha"""
-        # print("1234")
         self.edge_index = edge_index
         self.p_t = p_t
         self.use_beta = use_beta
@@ -126,8 +124,6 @@ class Observation_progation(MessagePassing):
             assert alpha is not None
             if isinstance(edge_index, Tensor):
                 return out, (edge_index, alpha)
-            elif isinstance(edge_index, SparseTensor):
-                return out, edge_index.set_value(alpha, layout='coo')
         else:
             return out
     #message_selfattention
