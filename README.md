@@ -21,5 +21,5 @@ pip install -r requirements.txt
 ```
 # Usage
 ```python
-python code\main.py
+python main.py
 ```
