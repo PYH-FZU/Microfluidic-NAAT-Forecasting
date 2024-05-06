@@ -53,7 +53,6 @@ def create_inout_sequences(input_data, tw):
 
 
 def get_data():
-    # 定义了一个名为 get_data 的函数，其功能为获取和预处理数据，然后返回训练数据和测试数据
 
     from pandas import read_csv
     series = read_csv('cubic.csv', header=0, index_col=0, parse_dates=False, squeeze=True)
