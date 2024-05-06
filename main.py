@@ -6,6 +6,7 @@ from tqdm import tqdm
 import torch.nn as nn
 import numpy as np
 import pandas as pd
+from pandas import read_csv
 import torch.nn.functional as F
 from matplotlib import pyplot
 from torch import cosine_similarity
@@ -13,6 +14,7 @@ from torch.nn.parameter import Parameter
 from torch.optim.lr_scheduler import StepLR
 from sklearn.preprocessing import MinMaxScaler
 from Ob_propagation import Observation_progation
+from torch.nn import TransformerEncoder, TransformerEncoderLayer
 
 lr = 0.1
 d_inp = 20
@@ -54,7 +56,7 @@ def create_inout_sequences(input_data, tw):
 
 def get_data():
 
-    from pandas import read_csv
+    
     series = read_csv('cubic.csv', header=0, index_col=0, parse_dates=False, squeeze=True)
     if Normalization == True:
         scaler = MinMaxScaler(feature_range=(0, 1))
@@ -122,7 +124,7 @@ class GNN_TS(nn.Module):
 
 
         super().__init__()
-        from torch.nn import TransformerEncoder, TransformerEncoderLayer
+        
         self.model_type = 'Transformer'
         self.global_structure = global_structure
         self.sensor_wise_mask = sensor_wise_mask
