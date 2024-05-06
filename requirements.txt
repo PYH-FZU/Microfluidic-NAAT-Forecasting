@@ -1,9 +1,8 @@
-torch==1.9.0+cu102
-numpy==1.19.4
-sklearn==0.0
-scikit-learn==0.24.2
-torchvision==0.10.0
-scipy==1.5.4
-matplotlib==3.4.3
-pandas==1.1.4
-tqdm==4.62.2
+torch==2.0.0
+torchvision==0.15.0
+pandas==1.5.3
+tqdm==4.65.0
+matplotlib==3.7.1
+numpy==1.23.5
+scikit-learn==1.2.2
+torch_geometric==2.3.1
