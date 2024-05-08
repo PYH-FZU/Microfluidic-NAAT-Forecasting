@@ -3,7 +3,6 @@ Forecasting dynamic trends in NAAT amplification curves in advance using a deep 
 #  Prerequisites
 * Linux/MacOS/Windows
 * python3.10
-* CUDA
 # Installation
 1.Create a conda virtual environment and activate it
 ```python
