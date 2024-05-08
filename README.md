@@ -6,13 +6,13 @@ Forecasting dynamic trends in NAAT amplification curves in advance using a deep 
 # Installation
 1.Create a conda virtual environment and activate it
 ```python
-conda create -n Microfluidic-NAAT-Forecasting python=3.10.9 -y
-conda activate Microfluidic-NAAT-Forecasting
+conda create -n Microfluidic_NAAT_Forecasting python=3.10.9 -y
+conda activate Microfluidic_NAAT_Forecasting
 ```
-2.Clone the Microfluidic-NAAT-Forecasting repository.
+2.Clone the Microfluidic_NAAT_Forecasting repository.
 ```python
 git clone https://github.com/PYH-FZU/Microfluidic-NAAT-Forecasting.git
-cd PCR_Prediction
+cd Microfluidic-NAAT-Forecasting
 ```
 3.Install the required packs
 ```python
