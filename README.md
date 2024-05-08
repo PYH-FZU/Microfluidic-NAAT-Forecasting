@@ -1,5 +1,5 @@
-# PCR_Prediction
-Predicting dynamic trends in PCR amplification curves in advance using a deep learning model.
+# Microfluidic NAAT Forecasting
+Forecasting dynamic trends in NAAT amplification curves in advance using a deep learning model.
 #  Prerequisites
 * Linux/MacOS/Windows
 * python3.10
