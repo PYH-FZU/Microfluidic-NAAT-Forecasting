@@ -310,7 +310,7 @@ if __name__ == "__main__":
         train(train_data)
         if(epoch % 10 == 0):
             val_loss = plot_and_loss(model, test_data, epoch)
-            predict_future(model, test_data, 200)###预测数据的长度
+            predict_future(model, test_data, 200)
         else:
             val_loss = evaluate(model, test_data)
         print('-' * 89)
