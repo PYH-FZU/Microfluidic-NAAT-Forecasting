@@ -1,5 +1,5 @@
 # Microfluidic-NAAT-Forecasting
-Forecasting dynamic trends in NAAT amplification curves in advance using a deep learning model.
+Forecasting dynamic trends in NAAT((Nucleic Acid Amplification Test)) amplification curves in advance using a deep learning model.
 #  Prerequisites
 * Linux/MacOS/Windows
 * python3.10
